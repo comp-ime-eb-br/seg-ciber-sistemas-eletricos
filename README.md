@@ -19,6 +19,8 @@ Foi simulado um sistema de proteção de distância de linhas de transmissão en
 
 A proteção de distância na subestação 1 foi realizada pelo IED real SEL-421, e a proteção de distância na subestação 2 foi realizada por um IED virtual no RTDS. Além disso, foram simulados no RTDS um disjuntor para cada subestação, que recebiam comandos de seus respecitivos IEDs de proteção e enviavam o seu status aos mesmos.
 
+Os ataques de retransmissão, mascaramento e de negação de serviço mostraram as vulnerabilidades descritas na literatura, causando acionamentos incorretos, no caso dos ataques de retransmissão e mascaremntos; e causando o impedimento da execução de comandos, com o ataque de negação de serviço.
+
 ### Implementação dos Ataques cibernéticos
 
 Os ataques cibernéticos foram implementados com a utilização da biblioteca open-source libiec61850 (https://libiec61850.com/), que provê interface servidor e cliente para comunicação em protocolos MMS, GOOSE e SV da norma 61850 em linguagem C. O autor da biblioteca libiec61850 informa que o objetivo do seu projeto é prover implementação que tenha portabilidade para ser usado em sistemas embarcados e também disponibiliza exemplos de códigos para serem usados como ponto de partida para a criação de aplicações (https://libiec61850.com/about/).
