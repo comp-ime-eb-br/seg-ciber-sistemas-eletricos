@@ -8,7 +8,7 @@ O ataque de retransmissão é realizado com o reenvio de mensagens legítimas pr
 
 O ataque de mascaramento é realizado a partir da captura de uma mensagem previamente enviada e seu conteúdo é modificado para realizar algum objetivo específico do atacante cibernético. Porém, nesse tipo de ataque, os parâmetros de sequenciamento das mensagens do protocolo GOOSE como o sqnum e stnum devem possuir coerência com o tráfego em tempo real, isso com o objetivo de dificultar medidas de detecção de intrusão que venham realizam a verificação do sequenciamento das mensagens [Ustun et al. 2019].
 
-Já o ataque de envenenamento é realizado com o objetivo de degradar a comunicação de rede entre os equipamentos da subestação. Esa degradação pode ser realizada através do inundamento de pacotes GOOSE na rede, causando a negação de serviço pelo mau funcionamento da comunicação. 
+Já o ataque de envenenamento é realizado com o objetivo de degradar a comunicação de rede entre os equipamentos da subestação. Esa degradação pode ser realizada através do inundamento de pacotes GOOSE na rede, causando a negação de serviço pelo mau funcionamento da comunicação [Kush et al. 2014].. 
 
 
 ### Implementação dos Ataques cibernéticos
@@ -52,6 +52,9 @@ A geração dos projetos no programa Visual Studio da Microsoft foi realziada at
 Hong, J., Liu, C.-C., and Govindarasu, M. (2014). Detection of cyber intrusions using
 network-based multicast messages for substation automation. In ISGT 2014, pages
 1–5.
+
+Kush, N., Ahmed, E., Branagan, M., and Foo, E. (2014). Poisoned goose: Exploiting the
+goose protocol. volume 149, page 17 – 22.
 
 Quincozes, S. E., Albuquerque, C., Passos, D., and Moss ́e, D. (2021). A survey on
 intrusion detection and prevention systems in digital substations. Computer Networks,
