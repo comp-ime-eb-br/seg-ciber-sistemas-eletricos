@@ -17,7 +17,7 @@ Neste repositório encontram-se os arquivos dos ataques realizados de Retransmis
 
 Foi simulado um sistema de proteção de distância de linhas de transmissão entre duas subestações. O sistema foi modelado no RTDS e foram utilizados os seguintes equipamentos físicos: IED SEL-421, de proteção de distância; RTAC SEL-3555 como sistema supervisório (SCADA) e um switch para interfacear com o RTDS. Os ataques cibernéticos foram realizados por uma máquina convencional processador Intel I7-8550U 1.8 GHz e memória RAM 12 GB DDR4 com sistema operacional Windows. A máquina atacante possuía acesso à rede operacional no nível de estação do sistema elétrico simulado. 
 
-A proteção de distância na subestação 1 foi realizada pelo IED real SEL-421, e a proteção de distância na subestação 2 foi realizada por um IED virtual no RTDS. Além disso, foram simulados no RTDS um disjuntor para cada subestação, que recebiam comandos de seus respecitivos IEDs de proteção e enviam o seu status aos mesmos.
+A proteção de distância na subestação 1 foi realizada pelo IED real SEL-421, e a proteção de distância na subestação 2 foi realizada por um IED virtual no RTDS. Além disso, foram simulados no RTDS um disjuntor para cada subestação, que recebiam comandos de seus respecitivos IEDs de proteção e enviavam o seu status aos mesmos.
 
 ### Implementação dos Ataques cibernéticos
 
