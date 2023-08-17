@@ -8,14 +8,16 @@ O ataque de retransmissão é realizado com o reenvio de mensagens legítimas pr
 
 O ataque de mascaramento é realizado a partir da captura de uma mensagem previamente enviada e seu conteúdo é modificado para realizar algum objetivo específico do atacante cibernético. Porém, nesse tipo de ataque, os parâmetros de sequenciamento das mensagens do protocolo GOOSE como o sqnum e stnum devem possuir coerência com o tráfego em tempo real, isso com o objetivo de dificultar medidas de detecção de intrusão que venham realizam a verificação do sequenciamento das mensagens [Ustun et al. 2019].
 
-Já o ataque de envenenamento é realizado com o objetivo de degradar a comunicação de rede entre os equipamentos da subestação. Esa degradação pode ser realizada através do inundamento de pacotes GOOSE na rede, causando a negação de serviço pelo mau funcionamento da comunicação [Kush et al. 2014].. 
+Já o ataque de envenenamento é realizado com o objetivo de degradar a comunicação de rede entre os equipamentos da subestação. Essa degradação pode ser realizada através do inundamento de pacotes GOOSE na rede, causando a negação de serviço pelo mau funcionamento da comunicação [Kush et al. 2014].. 
 
 Neste repositório encontram-se os arquivos dos ataques realizados de Retransmissão, Mascaramento e de Negação de Serviço por inundamento de pacotes GOOSE.
 
 
 ### Simulação
 
-Foi simulado um sistema de proteção de distância de linhas de transmissão entre duas subestações. O sistema foi modelado no RTDS e foram utilizados os seguintes equipamentos físicos: IED SEL-421, de proteção de distância; RTAC SEL-3555 como sistema supervisório (SCADA) e um switch para interfacear com o RTDS. Os ataques cibernéticos foram realizados por uma máquina convencional processador Intel I7-8550U 1.8 GHz e memória RAM 12 GB DDR4 com sistema operacional Windows. A máquina atacante possuía acesso à rede operacional no nível de estação do sistema elétrico simulado.
+Foi simulado um sistema de proteção de distância de linhas de transmissão entre duas subestações. O sistema foi modelado no RTDS e foram utilizados os seguintes equipamentos físicos: IED SEL-421, de proteção de distância; RTAC SEL-3555 como sistema supervisório (SCADA) e um switch para interfacear com o RTDS. Os ataques cibernéticos foram realizados por uma máquina convencional processador Intel I7-8550U 1.8 GHz e memória RAM 12 GB DDR4 com sistema operacional Windows. A máquina atacante possuía acesso à rede operacional no nível de estação do sistema elétrico simulado. 
+
+A proteção de distância na subestação 1 foi realizada pelo IED real SEL-421, e a proteção de distância na subestação 2 foi realizada por um IED virtual no RTDS. Além disso, foram simulados no RTDS um disjuntor para cada subestação, que recebiam comandos de seus respecitivos IEDs de proteção e enviam o seu status aos mesmos.
 
 ### Implementação dos Ataques cibernéticos
 
