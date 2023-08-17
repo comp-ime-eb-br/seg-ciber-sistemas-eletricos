@@ -25,7 +25,7 @@ Os ataques de retransmissão, mascaramento e de negação de serviço mostraram 
 
 Os ataques cibernéticos foram implementados com a utilização da biblioteca open-source libiec61850 (https://libiec61850.com/), que provê interface servidor e cliente para comunicação em protocolos MMS, GOOSE e SV do conjunto de normas IEC 61850 em linguagem C. O autor da biblioteca libiec61850 informa que o objetivo do seu projeto é prover implementação que tenha portabilidade para ser usado em sistemas embarcados e também disponibiliza exemplos de códigos para serem usados como ponto de partida para a criação de aplicações (https://libiec61850.com/about/).
 
-Os exemplos de códigos "goose_observer", "goose_publisher" e "goose_subscriber" foram usados como ponto de partida para a criação dos códigos sendo implementados pelos autores as lógicas de funcionamento de cada ataque mencionado na seção anterior. Os códigos estão disponíveis neste repositório com os comentários pertinentes para entedimento das soluções.
+Os exemplos de códigos "goose_observer", "goose_publisher" e "goose_subscriber" e algumas de suas funções serviram como ponto de partida para a criação dos códigos sendo implementados pelos autores as lógicas de funcionamento de cada ataque mencionado na seção anterior. Os códigos estão disponíveis neste repositório com os comentários pertinentes para entedimento das soluções.
 
 A geração dos projetos no programa Visual Studio da Microsoft foi realizada através dos passos a seguir, muitos deles semelhantes à algumas instruções presentes na página https://libiec61850.com/documentation/building-the-library/ de como construir a biblioteca no sistema operaiconal Windows, com exceção de algumas particularidades desse trabalho em questão:
 
