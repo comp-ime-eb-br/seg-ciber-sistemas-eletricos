@@ -47,7 +47,13 @@ A geração dos projetos no programa Visual Studio da Microsoft foi realziada at
 
 
 
+## Referências
+
 Hong, J., Liu, C.-C., and Govindarasu, M. (2014). Detection of cyber intrusions using
 network-based multicast messages for substation automation. In ISGT 2014, pages
 1–5.
+
+Quincozes, S. E., Albuquerque, C., Passos, D., and Moss ́e, D. (2021). A survey on
+intrusion detection and prevention systems in digital substations. Computer Networks,
+184:107679.
 
