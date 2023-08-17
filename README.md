@@ -43,11 +43,11 @@ A geração dos projetos no programa Visual Studio da Microsoft foi realizada at
 
 7-Na pasta criada, foram criadas 3 pastas, uma para cada ataque e em cada uma foram acrescentados 3 arquivos: o arquivos do código em c, o arquvio Makefile e o arquivo CMakeList.txt a partir de um dos exemplos da libiec61850. 
 
-8-Os arquivos foram editados de acordo com os nomes dados. Também foram editados os arquivos Makefile e CMakeList.txt do diretório principal da libiec61850 para incluir os nomes das pastas dos projetos a serem criados dos ataques.
+8-Os arquivos Makefile CMakeList.txt foram editados de acordo com os nomes dados. Também foram editados os arquivos Makefile e CMakeList.txt do diretório principal da libiec61850 para incluir os nomes das pastas dos projetos a serem criados dos ataques.
 
 9-Para a geração dos projetos, acessou-o o terminal windows a partir do diretório principal da libiec61850 e criou-se uma nova pasta onde os projetos serão carregados.
 
-10-Após a criação da pasta, ela foi acessada através do terminal onde foi executado a seguinte linha de código:
+10-Após a criação da pasta, ela foi acessada através do terminal onde foi executado a seguinte linha de código para a geração de projeto no Visual Studio 2019:
 
    
    "cmake -G "Visual Studio 16 2019" -A Win32 .."
