@@ -21,7 +21,7 @@ A proteção de distância na subestação 1 foi realizada pelo IED real SEL-421
 
 ### Implementação dos Ataques cibernéticos
 
-Os ataques cibernéticos foram implementados com a utilização da biblioteca open-source libiec61850 (https://libiec61850.com/), que provê interface servidor e cliente para comunicação em protocolos MMS, GOOSE e SV da norma 61850 em linguagem C. O autor da biblioteca libiec61850 informa que o objetivo do seu projeto é prover implementação que tenha portabilidade para ser usado em sistemas embarcados e também disponibiliza exemplos de códigos para serem usados como ponto de partida para a criação de aplicações [libiec61850 2022].
+Os ataques cibernéticos foram implementados com a utilização da biblioteca open-source libiec61850 (https://libiec61850.com/), que provê interface servidor e cliente para comunicação em protocolos MMS, GOOSE e SV da norma 61850 em linguagem C. O autor da biblioteca libiec61850 informa que o objetivo do seu projeto é prover implementação que tenha portabilidade para ser usado em sistemas embarcados e também disponibiliza exemplos de códigos para serem usados como ponto de partida para a criação de aplicações (https://libiec61850.com/about/).
 
 Os exemplos de códigos "goose_observer", "goose_publisher" e "goose_subscriber" foram usados como ponto de partida para a criação dos códigos sendo implementados as lógicas de funcionamento de cada ataque implementadas. Os códigos estão disponíveis neste repositório com os comentários pertinentes para entedimento das soluções.
 
