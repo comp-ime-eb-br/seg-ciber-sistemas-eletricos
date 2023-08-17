@@ -11,11 +11,17 @@ O ataque de mascaramento é realizado a partir da captura de uma mensagem previa
 Já o ataque de envenenamento é realizado com o objetivo de degradar a comunicação de rede entre os equipamentos da subestação. Esa degradação pode ser realizada através do inundamento de pacotes GOOSE na rede, causando a negação de serviço pelo mau funcionamento da comunicação [Kush et al. 2014].. 
 
 Neste repositório encontram-se os arquivos dos ataques realizados de Retransmissão, Mascaramento e de Negação de Serviço por inundamento de pacotes GOOSE.
+
+
+### Simulação
+
+Foi simulado um sistema de proteção de distância de linhas de transmissão entre duas subestações. O sistema foi modelado no RTDS e foram utilizados os seguintes equipamentos físicos: IED SEL-421, de proteção de distância; RTAC SEL-3555 como sistema supervisório (SCADA) e um switch para interfacear com o RTDS. Os ataques cibernéticos foram realizados por uma máquina convencional processador Intel I7-8550U 1.8 GHz e memória RAM 12 GB DDR4 com sistema operacional Windows. A máquina atacante possuía acesso à rede operacional no nível de estação do sistema elétrico simulado.
+
 ### Implementação dos Ataques cibernéticos
 
-Os ataques cibernéticos foram implementados com a utilização da biblioteca open-source libiec61850 (https://libiec61850.com/), que provê interface servidor e cliente para comunicação em protocolos MMS, GOOSE e SV da norma 61850 em linguagem C. O autor da biblioteca libiec61850 informa que o objetivo do seu projeto é prover implementação que tenha portabilidade para ser usado em sistemas embarcados e também disponibiliza exemplos para serem usados como ponto de partida para a criação de aplicações [libiec61850 2022].
+Os ataques cibernéticos foram implementados com a utilização da biblioteca open-source libiec61850 (https://libiec61850.com/), que provê interface servidor e cliente para comunicação em protocolos MMS, GOOSE e SV da norma 61850 em linguagem C. O autor da biblioteca libiec61850 informa que o objetivo do seu projeto é prover implementação que tenha portabilidade para ser usado em sistemas embarcados e também disponibiliza exemplos de códigos para serem usados como ponto de partida para a criação de aplicações [libiec61850 2022].
 
-A partir das funções presentes nos exemplos de códigos de publicador e assinante em protocolo GOOSE disponibilizados na libiec61850, os códigos dos ataques foram gerados em linguagem C com as lógicas de funcionamento de cada ataque implementadas. Os códigos estão disponíveis neste repositório com os comentários pertinentes para entedimento das soluções.
+Os exemplos de códigos "goose_observer", "goose_publisher" e "goose_subscriber" foram usados como ponto de partida para a criação dos códigos sendo implementados as lógicas de funcionamento de cada ataque implementadas. Os códigos estão disponíveis neste repositório com os comentários pertinentes para entedimento das soluções.
 
 A geração dos projetos no programa Visual Studio da Microsoft foi realziada através dos passos a seguir, muitos deles semelhantes à algumas instruções presentes na página https://libiec61850.com/documentation/building-the-library/, com exceção de algumas particularidades desse trabalho em questão:
 
