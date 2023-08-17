@@ -15,7 +15,7 @@ Neste repositório encontram-se os arquivos dos ataques realizados de Retransmis
 
 Os ataques cibernéticos foram implementados com a utilização da biblioteca open-source libiec61850 (https://libiec61850.com/), que provê interface servidor e cliente para comunicação em protocolos MMS, GOOSE e SV da norma 61850 em linguagem C. O autor da biblioteca libiec61850 informa que o objetivo do seu projeto é prover implementação que tenha portabilidade para ser usado em sistemas embarcados e também disponibiliza exemplos para serem usados como ponto de partida para a criação de aplicações [libiec61850 2022].
 
-A partir das funções presentes nos exemplos de códigos de publicador e assinante em protocolo GOOSE disponibilizados na libiec61850, os códigos dos ataques foram gerados em linguagem C com as lógicas de funcionamento de cada ataque como explicado na seção anterior. Os códigos estão disponíveis neste repositório com os comentários pertinentes para entedimento das soluções.
+A partir das funções presentes nos exemplos de códigos de publicador e assinante em protocolo GOOSE disponibilizados na libiec61850, os códigos dos ataques foram gerados em linguagem C com as lógicas de funcionamento de cada ataque implementadas. Os códigos estão disponíveis neste repositório com os comentários pertinentes para entedimento das soluções.
 
 A geração dos projetos no programa Visual Studio da Microsoft foi realziada através dos passos a seguir, muitos deles semelhantes à algumas instruções presentes na página https://libiec61850.com/documentation/building-the-library/, com exceção de algumas particularidades desse trabalho em questão:
 
