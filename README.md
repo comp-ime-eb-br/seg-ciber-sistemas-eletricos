@@ -17,7 +17,7 @@ Os ataques cibernéticos foram implementados com a utilização da biblioteca op
 
 A partir dos exemplos de códigos de publicador e assinante em protocolo GOOSE disponibilizados na libiec61850, os códigos dos ataques foram gerados em linguagem C e estão disponíveis neste repositório com os comentários pertinentes para entedimento das soluções.
 
-A geração dos projetos no Visual Studio através dos passos a seguir, muitos deles semelhantes às instruções presentes na página https://libiec61850.com/documentation/building-the-library/.
+A geração dos projetos no programa Visual Studio da Microsoft foi realziada através dos passos a seguir, muitos deles semelhantes à algumas instruções presentes na página https://libiec61850.com/documentation/building-the-library/, com exceção de algumas particularidades desse trabalho em questão:
 
 1-Carregar na máquina a última versão da libiec61850 presente na página https://libiec61850.com/downloads/.
 
