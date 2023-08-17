@@ -4,7 +4,7 @@ Este repositório contém os códigos em linguagem C de ataques cibernéticos re
 ## Ataques cibernéticos
 A digitalização dos sistemas elétricos, promovida principalmente pelo advento o conjunto de normas 61850 da International Eletrotechnical Comission (IEC 61850), trouxeram as ameaças cibernéticas a esses ambientes. Na literatura acadêmica, verifica-se diversos ataques cibernéticos possíveis que tomam proveito das vulnerabilidades do protocolo GOOSE da norma IEC 61850. Esses ataques são o ataque de retransmissão, de injeção de mensagem, de mascaramento e de envenamento [Quincozes et al. 2021].
 
-O ataque de retransmissão é realizado com o reenvio de mensagens legítimas previamente enviadas.  Esse ataque tem o potencial de causar o funcionamento errôneo quando mesangens antigas com comandos realizados em determinado contexto de porteção e controle são reenviadas em outro contexto causando a realização de comandos.
+O ataque de retransmissão é realizado com o reenvio de mensagens legítimas previamente enviadas.  Esse ataque tem o potencial de causar o funcionamento errôneo quando mesangens antigas com comandos realizados em determinado contexto de porteção e controle são reenviadas em outro contexto causando a realização de comandos  [Hong et al. 2014].
 
 O ataque de mascaramento é realizado a partir da captura de uma mensagem previamente enviada e seu conteúdo é modificado para realizar algum objetivo específico do atacante cibernético. Porém, nesse tipo de ataque, os parâmetros de sequenciamento das mensagens do protocolo GOOSE como o sqnum e stnum devem possuir coerência com o tráfego em tempo real, isso com o objetivo de dificultar medidas de detecção de intrusão que venham realizam a verificação do sequenciamento das mensagens.
 
@@ -46,7 +46,8 @@ A geração dos projetos no programa Visual Studio da Microsoft foi realziada at
 11-Após isso, os projetos no Visual Studio serão criados na pasta criada no passo 9, podendo a partir de agora serem executados ou seus códigos fonte em c serem editados.
 
 
-Download the winpcap developers pack from here (http://www.winpcap.org/install/bin/WpdPack_4_1_2.zip)
-Unpack the zip file. Copy the folders Lib and Include from the WpdPack directory in the third_party/winpcap directory of libiec61850
-Follow the instructions to build the library with make or cmake
+
+Hong, J., Liu, C.-C., and Govindarasu, M. (2014). Detection of cyber intrusions using
+network-based multicast messages for substation automation. In ISGT 2014, pages
+1–5.
 
