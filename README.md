@@ -25,7 +25,7 @@ Os ataques cibernéticos foram implementados com a utilização da biblioteca op
 
 Os exemplos de códigos "goose_observer", "goose_publisher" e "goose_subscriber" foram usados como ponto de partida para a criação dos códigos sendo implementados as lógicas de funcionamento de cada ataque implementadas. Os códigos estão disponíveis neste repositório com os comentários pertinentes para entedimento das soluções.
 
-A geração dos projetos no programa Visual Studio da Microsoft foi realziada através dos passos a seguir, muitos deles semelhantes à algumas instruções presentes na página https://libiec61850.com/documentation/building-the-library/, com exceção de algumas particularidades desse trabalho em questão:
+A geração dos projetos no programa Visual Studio da Microsoft foi realizada através dos passos a seguir, muitos deles semelhantes à algumas instruções presentes na página https://libiec61850.com/documentation/building-the-library/ de como construir a biblioteca no sistema operaiconal Windows, com exceção de algumas particularidades desse trabalho em questão:
 
 1-Carregar na máquina a última versão da libiec61850 presente na página https://libiec61850.com/downloads/.
 
