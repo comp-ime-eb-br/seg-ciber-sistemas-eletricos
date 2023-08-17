@@ -10,7 +10,7 @@ O ataque de mascaramento é realizado a partir da captura de uma mensagem previa
 
 Já o ataque de envenenamento é realizado com o objetivo de degradar a comunicação de rede entre os equipamentos da subestação. Esa degradação pode ser realizada através do inundamento de pacotes GOOSE na rede, causando a negação de serviço pelo mau funcionamento da comunicação [Kush et al. 2014].. 
 
-
+Neste repositório encontram-se os arquivos dos ataques realizados de Retransmissão, Mascaramento e de Negação de Serviço por inundamento de pacotes GOOSE.
 ### Implementação dos Ataques cibernéticos
 
 Os ataques cibernéticos foram implementados com a utilização da biblioteca open-source libiec61850 (https://libiec61850.com/), que provê interface servidor e cliente para comunicação em protocolos MMS, GOOSE e SV da norma 61850 em linguagem C. O autor da biblioteca libiec61850 informa que o objetivo do seu projeto é prover implementação que tenha portabilidade para ser usado em sistemas embarcados e também disponibiliza exemplos para serem usados como ponto de partida para a criação de aplicações [libiec61850 2022].
