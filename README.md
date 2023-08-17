@@ -7,4 +7,6 @@ A digitalização dos sistemas elétricos, promovida principalmente pela advento
 
 ### Implementação dos Ataques cibernéticos
 
-Os ataques cibernéticos foram implementados com a utilização da biblioteca open-source libiec61850 (https://libiec61850.com/), que provê interface servidor e cliente para comunicação em protocolos MMS, GOOSE e SV da norma 61850 em linguagem C. O autor da biblioteca libiec61850 informa que o objetivo do seu projeto é prover implementação que tenha portabilidade para ser usado em sistemas embarcados e também disponibiliza exemplos para fsserem usados como ponto de partida para a criação de aplicações [libiec61850 2022].
+Os ataques cibernéticos foram implementados com a utilização da biblioteca open-source libiec61850 (https://libiec61850.com/), que provê interface servidor e cliente para comunicação em protocolos MMS, GOOSE e SV da norma 61850 em linguagem C. O autor da biblioteca libiec61850 informa que o objetivo do seu projeto é prover implementação que tenha portabilidade para ser usado em sistemas embarcados e também disponibiliza exemplos para serem usados como ponto de partida para a criação de aplicações [libiec61850 2022].
+
+A partir dos exemplos de códigos de publicador e assinante em protocolo GOOSE disponibilizados na libiec61850, os códigos dos ataques foram gerados em linguagem C e estão disponíveis neste repositório com os comentários pertinentes para entedimento das soluções. 
