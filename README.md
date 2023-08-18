@@ -19,7 +19,7 @@ Foi simulado um sistema de proteção de distância de linhas de transmissão en
 
 A proteção de distância na subestação 1 foi realizada pelo IED real SEL-421, e a proteção de distância na subestação 2 foi realizada por um IED virtual no RTDS. Além disso, foram simulados no RTDS um disjuntor para cada subestação, que recebiam comandos de seus respecitivos IEDs de proteção e enviavam o seu status aos mesmos.
 
-Os ataques de retransmissão, mascaramento e de negação de serviço mostraram as vulnerabilidades descritas na literatura, causando acionamentos incorretos, no caso dos ataques de retransmissão e mascaremntos; e causando o impedimento da execução de comandos, com o ataque de negação de serviço.
+Os ataques de retransmissão, mascaramento e de negação de serviço mostraram as vulnerabilidades descritas na literatura, causando acionamentos incorretos, no caso dos ataques de retransmissão e mascaramento; e causando o impedimento da execução de comandos, com o ataque de negação de serviço.
 
 ### Implementação dos Ataques cibernéticos
 
