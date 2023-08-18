@@ -35,7 +35,7 @@ A geração dos projetos no programa Visual Studio da Microsoft foi realizada at
 
 3-Instalação do programa CMAKE encontrado na página https://cmake.org/download/.
 
-4-Intalação do programa Winpcap encontrado na página http://www.winpcap.org/.
+4-Instalação do programa Winpcap encontrado na página http://www.winpcap.org/.
 
 5-Para permitir comunicação GOOSE, como orientado na página de contrução da biblioteca libiec61850, foi baixado o pacote de desenvolvimento através do endereço http://www.winpcap.org/install/bin/WpdPack_4_1_2.zip e os arquivos Lib e Include do diretório WpdPack foram inseridos na pasta third_party/winpcap do diretório da libiec61850 carregada no passo 1.
 
