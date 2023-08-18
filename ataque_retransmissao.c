@@ -193,16 +193,15 @@ main(int argc, char** argv)
                 //Mantido o mesmo valor de stnum
                 GoosePublisher_setStNum(publicador, stNum); 
 
-                //Imediata Injecao do pacote de ataque na rede
-                GoosePublisher_publish(publicador, valores_dataset);
-
-
                 //Definicao do tempo para o pacote capturado ser retransmitido, pode ser gerado aleatoriamento dentro de um intervalo ou em um tempo especifico definido pelo atacante
                 //No caso foi gerado aleatoriamento dentro de um intervalo
                 int intervalo_sup_sleep = 10000, intervalo_inf_sleep = 1000;
                 intervalo_sleep = (rand() % (intervalo_sup_sleep - intervalo_inf_sleep + 1) + intervalo_inf_sleep);
                 Thread_sleep(intervalo_sleep);
                 
+                 //Imediata Injecao do pacote de ataque na rede
+                GoosePublisher_publish(publicador, valores_dataset);
+
                 GoosePublisher_destroy(publicador);
                 
                 //Finaliza o loop
