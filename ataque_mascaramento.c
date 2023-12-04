@@ -176,12 +176,13 @@ main(int argc, char** argv)
                 else
                     interface = "3";
 
-                //Valor do dataset a ser atacado determinado pelo atacante
-                GoosePublisher_setDataSetRef(publicador, "SEL_421_distCFG/LLN0$dataset_disj");
+                
 
 
                 //Inserção dos valores retirados do pacote original no pacote de ataque a ser injetado
                 GoosePublisher publicador = GoosePublisher_create(&gooseCommParameters, interface);
+                //Valor do dataset a ser atacado determinado pelo atacante
+                GoosePublisher_setDataSetRef(publicador, "SEL_421_distCFG/LLN0$dataset_disj");
                 GoosePublisher_setGoCbRef(publicador, goCbRef);
                 GoosePublisher_setConfRev(publicador, confRev);
                 GoosePublisher_setGoID(publicador, goId);
